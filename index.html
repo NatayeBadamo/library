@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+</head>
+<body>
+    <header>
+        <p id="resetButton">My Library</p>
+        <script>
+            document.getElementById("resetButton").addEventListener("click", function () {
+                location.reload();
+            })
+        </script>
+    </header>
+    <div class="main">
+        <button id="btn">Add a Book</button>
+        <dialog id="dialog">
+            <form>
+                <h1 id="h_one">Add the Book</h1><br>
+                <label for="title">Title</label><br>
+                <input type="text" name="title" id="title" required><br><br>
+                <label for="author">Author</label><br>
+                <input type="text" name="author" id="author" required><br><br>
+                <label for="pages">Pages</label><br>
+                <input type="number" name="pages" id="pages" max="3000" title="Please enter a numeric value up to 3000" required><br><br>
+                <button type="submit" id="submit">Submit</button><br>
+                <span class="mdi mdi-close-box-multiple-outline" id="cancelIcon"></span>
+            </form>
+        </dialog>
+        <div class="display">
+
+        </div>
+        <aside id="aside">
+            
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Na'taye Badamo Odrien Yuhana. All rights reserved.</p>
+    </footer>
+</body>
+</html>

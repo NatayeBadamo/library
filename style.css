@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(247, 243, 243);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 17vh;
+}
+
+
+header p{
+    font-size: 40px;
+    padding: 15px;
+    margin: 5px;
+    border-bottom-style: groove;
+    width: 204px;
+    color: brown;
+    border-bottom-color: brown;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+    padding: 20px;
+}
+
+
+#btn {
+    position: absolute;
+    left: 750px;
+    top: 135px;
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 0.8s;
+    outline: none;
+    border-color: white;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(6, 41, 6);
+    color: aliceblue;
+    transition: 0.8s;
+    outline: none;
+    border-color: greenyellow;
+}
+
+dialog {
+    position: relative;
+    left: 690px;
+    top: 220px;
+    width: 250px;
+    height: 335px;
+    border-radius: 8px;
+    background-color: burlywood;
+}
+
+body.dialog-open::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow; /* Adjust the opacity as needed */
+    backdrop-filter: blur(100%); /* Add backdrop-filter for the blur effect */
+    z-index: 999; /* Ensure the overlay is above other elements */
+}
+
+form {
+    padding: 10px;
+    margin: 8px;
+}
+
+label {
+    padding: 5px;
+}
+
+
+#h_one {
+    margin-left: 10px;
+    border-bottom-style: groove;
+    border-bottom-color: brown;
+}
+
+#submit {
+    width: 150px;
+    background-color: brown;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    height: 25px;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+    border-color: brown;
+}
+
+input{
+    border-color: rgb(175, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: red;
+
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 60%;
+    background-color: black;
+    border-radius: 8px;
+    color: rgb(8, 7, 7);
+    flex-grow: 1; /* Allow the display to take up available space */
+    padding: 35px;
+    margin: 15px;
+}
+
+
+.grid{
+    width: 250px;
+    height: 215px;
+    background-color: rgb(222, 170, 101);
+    border-radius: 8px;
+    color: rgb(8, 7, 7);
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid brown;
+}
+
+.grid p {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(6, 6, 6);
+}
+
+.grid button {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    border: 0;
+    animation: bounce 0.5s ease;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.grid button:active {
+    /* Styles applied during the :active state */
+    transform: translateY(-2px); /* You can adjust this based on your design */
+}
+
+
+.grid button:hover{
+    background-color: rgb(229, 220, 220);
+}
+
+footer {
+    border-top-style: groove;
+    border-top-color:  black;
+    background-color: rgb(3, 64, 64);
+    height: 10vh;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+
+.mdi-close-box-multiple-outline {
+    position: relative;
+    top: -16px;
+    left: 170px;
+    color: brown;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+aside {
+    background-color: rgb(3, 64, 64);
+    width: 17%;
+    height: 30vh;
+    position: absolute;
+    left: 20px;
+    top: 220px;
+    border-radius: 5px;
+}
+
+.div_aside {
+    width: 100%;
+    height: 100vh;
+}
+
+.div_aside p {
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(21, 2, 2);
+}
+
+.div_aside button {
+    padding: 10px;
+    margin: 15px;
+    width: 120px;
+    margin-left: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
